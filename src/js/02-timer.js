@@ -8,6 +8,7 @@ const minutesEl = document.querySelector('[data-minutes]');
 const secondsEl = document.querySelector('[data-seconds]');
 const inputEl = document.querySelector('#datetime-picker');
 let timerId = null;
+let selectedDate = null;
 
 btStartEl.addEventListener('click', handlClickStart);
 btStartEl.setAttribute('disabled', '');
