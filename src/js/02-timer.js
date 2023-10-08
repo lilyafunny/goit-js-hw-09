@@ -1,5 +1,8 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+let timerId = null;
+let selectedDate = null;
+let currentDate = null;
 
 const btStartEl = document.querySelector('button[data-start]');
 const daysEl = document.querySelector('[data-days]');
@@ -7,9 +10,6 @@ const hoursEl = document.querySelector('[data-hours]');
 const minutesEl = document.querySelector('[data-minutes]');
 const secondsEl = document.querySelector('[data-seconds]');
 const inputEl = document.querySelector('#datetime-picker');
-let timerId = null;
-let selectedDate = null;
-let currentDate = null;
 
 btStartEl.addEventListener('click', handlClickStart);
 btStartEl.setAttribute('disabled', '');
