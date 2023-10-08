@@ -4,6 +4,8 @@ const refs = {
   bodyEl: document.querySelector('body'),
 };
 
+let timerId = null;
+
 refs.btStartEl.addEventListener('click', handlClickStart);
 refs.btStopEl.addEventListener('click', handlClickStop);
 
