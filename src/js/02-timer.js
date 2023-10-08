@@ -9,6 +9,7 @@ const secondsEl = document.querySelector('[data-seconds]');
 const inputEl = document.querySelector('#datetime-picker');
 let timerId = null;
 let selectedDate = null;
+let currentDate = null;
 
 btStartEl.addEventListener('click', handlClickStart);
 btStartEl.setAttribute('disabled', '');
